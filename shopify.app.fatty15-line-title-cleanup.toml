@@ -10,11 +10,17 @@ api_version = "2027-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_cart_transforms,write_cart_transforms"
+# The app page lists products (read_products) with a field per store language (read_locales) and saves
+# the title for every market (read_markets, read/write_translations: market adaptations).
+scopes = "read_products,read_locales,read_markets,read_translations,write_translations"
+
+# The app page (extensions/app-home) calls the Admin API directly.
+[access.admin]
+direct_api_mode = "online"
+embedded_app_direct_api_access = true
 
 [auth]
 redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true

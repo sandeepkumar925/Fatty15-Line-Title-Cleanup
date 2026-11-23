@@ -1,4 +1,0 @@
-{
-  "name": "Line title cleanup",
-  "description": "Removes the \" - Shopify\" suffix from product titles in the cart, checkout and order."
-}
