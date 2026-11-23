@@ -1,0 +1,15 @@
+query CartTransformRunInput {
+  cart {
+    lines {
+      id
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          product {
+            title
+          }
+        }
+      }
+    }
+  }
+}
