@@ -1,4 +1,4 @@
-# Fatty15-Line-Title-Cleanup
+# Fatty15 Line Title Cleanup
 
 Set the product title customers see, per language, without changing the product itself. Built for
 titles like "90-Day Starter Kit - Shopify": the product keeps its title in the admin (and for any
